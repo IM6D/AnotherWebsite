@@ -1,0 +1,62 @@
+/* Full-width top nav, transparent background, consistent height */
+.nav {
+  position: sticky;           /* stays at the top when scrolling */
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  background: transparent;    /* <-- no white rectangle */
+  /* If you want a subtle divider line, uncomment next line */
+  /* border-bottom: 1px solid rgba(255,255,255,0.08); */
+}
+
+/* Centers the nav content and spreads items evenly */
+.nav-inner {
+  width: 100%;
+  max-width: 1200px;          /* keep links from stretching too far on 4K */
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Links look like text with hover color change */
+.nav-link {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0;                 /* remove extra vertical padding */
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #66a3ff;             /* blue hover */
+}
+
+/* “Sign out” styled like links */
+.nav-button {
+  background: none;
+  border: none;
+  color: #e6e6e6;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover {
+  color: #66a3ff;
+}
+
+/* Consistent page area: content starts near the top with uniform padding */
+.page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;             /* center the content column */
+  padding: 16px;              /* same on every page */
+}
